@@ -1,3 +1,6 @@
+This is the source code of the work "Learning with Structured Representations for Negation Scope Extraction" published in ACL 2018.
+
+
 ####Run the code######
 Run the following command to perform Linear, Semi and Latent models described in the paper.
 
