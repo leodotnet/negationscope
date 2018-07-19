@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project negationscope">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <!--define folder properties-->
+    <property name="dir.buildfile" value="."/>
+    <property name="dir.workspace" value="${dir.buildfile}/.."/>
+    <property name="dir.jarfile" value="${dir.buildfile}"/>
+    <target name="create_run_jar">
+        <jar destfile="${dir.jarfile}/ns.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="org.ns.negation.common.NegationScopeMain"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="${dir.jarfile}/target/classes"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/Leo/.m2/repository/org/apache/logging/log4j/log4j-api/2.8.2/log4j-api-2.8.2.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/Leo/.m2/repository/org/apache/logging/log4j/log4j-core/2.8.2/log4j-core-2.8.2.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/Leo/.m2/repository/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/Leo/.m2/repository/net/sourceforge/argparse4j/argparse4j/0.7.0/argparse4j-0.7.0.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/Leo/.m2/repository/net/java/dev/jna/jna/4.4.0/jna-4.4.0.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/Leo/.m2/repository/th4j-core/th4j-core_2.11/0.1/th4j-core_2.11-0.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/Leo/.m2/repository/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/Leo/.m2/repository/th4j-generate/th4j-generate_2.11/0.1/th4j-generate_2.11-0.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/Leo/.m2/repository/org/scala-lang/scala-reflect/2.11.7/scala-reflect-2.11.7.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/Leo/.m2/repository/com/typesafe/play/play-json_2.11/2.3.4/play-json_2.11-2.3.4.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/Leo/.m2/repository/com/typesafe/play/play-iteratees_2.11/2.3.4/play-iteratees_2.11-2.3.4.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/Leo/.m2/repository/org/scala-stm/scala-stm_2.11/0.7/scala-stm_2.11-0.7.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/Leo/.m2/repository/com/typesafe/config/1.2.1/config-1.2.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/Leo/.m2/repository/com/typesafe/play/play-functional_2.11/2.3.4/play-functional_2.11-2.3.4.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/Leo/.m2/repository/com/typesafe/play/play-datacommons_2.11/2.3.4/play-datacommons_2.11-2.3.4.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/Leo/.m2/repository/joda-time/joda-time/2.3/joda-time-2.3.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/Leo/.m2/repository/org/joda/joda-convert/1.6/joda-convert-1.6.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/Leo/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.3.2/jackson-annotations-2.3.2.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/Leo/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.3.2/jackson-core-2.3.2.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/Leo/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.3.2/jackson-databind-2.3.2.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="/Users/Leo/.m2/repository/com/nebula2d/jnlua/1.0.4/jnlua-1.0.4.jar"/>
+        </jar>
+    </target>
+</project>
