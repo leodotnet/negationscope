@@ -17,3 +17,5 @@ exp_cnesp.sh
 ####Source code######
 
 The source code is written in Java in "src" folder.
+
+Note that this is a Maven project so that you can import this project as a Maven project in eclipse.
