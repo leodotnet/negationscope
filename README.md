@@ -49,13 +49,8 @@ Note that it is a Maven project, therefore we recommend you to import this proje
 
 ## Citation
 If you use our code, please cite our work:
-@inproceedings{li2017learning,
-  title={Learning Latent Sentiment Scopes for Entity-Level Sentiment Analysis.},
-  author={Li, Hao and Lu, Wei},
-  booktitle={AAAI},
-  pages={3482--3489},
-  year={2017}
-}
+
+@InProceedings{P18-2085, author = "Li, Hao and Lu, Wei", title = "Learning with Structured Representations for Negation Scope Extraction", booktitle = "Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)", year = "2018", publisher = "Association for Computational Linguistics", pages = "533--539", location = "Melbourne, Australia", url = "http://aclweb.org/anthology/P18-2085" }
 
 
 
