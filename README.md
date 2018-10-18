@@ -11,53 +11,32 @@ This page contains the code used in the work "Learning with Structured Represent
 ## Usage
 
 Prerequisite: JRE (1.8 or later)
-Ant is installed.
 
-1. Run "make" to compile the source code
+Run the following command to try out the Linear, Semi and Latent models described in the paper.
 ```sh
-make
+java -Xmx32g -Xms8g -jar ns.jar  -modelname OIBAMN6 -thread 4 -subpath default -outputscope true -num_iter 1000 -reg 0.1 -optimizer lbfgs -dataset cdsco -lang en -discrete true -discardintest false -syntax true -useperl true -outputsem2012 true -unipos true
+```
+```sh
+java -Xmx32g -Xms8g -jar ns.jar  -modelname SEMIBOI2 -thread 4 -subpath default -outputscope true -num_iter 1000 -reg 0.1 -optimizer lbfgs -dataset cdsco -lang en -discrete true -discardintest false -syntax true -useperl true -outputsem2012 true -unipos true
+```
+```sh
+java -Xmx32g -Xms8g -jar ns.jar  -modelname OIBAMNLatent6 -thread 4 -subpath default -outputscope true -num_iter 1000 -reg 0.1 -optimizer lbfgs -dataset cdsco -lang en -discrete true -discardintest false -syntax true -useperl true -outputsem2012 true -unipos true -latentmax 2
 ```
 
-2. Run "make init" to initialize files and folders
-```sh
-make init
-```
-
-3. Run "make <experiment>" for experiments
-
-```sh
-make sentimentscope_latent_english
-```
-
-<experiment> includes the following experiments
-sentimentscope_latent_english
-sentimentscope_latent_nohiddeninfo_english
-sentimentscope_latent_withpostag_english
-sentimentscope_latent_wordembedding_english
-sentimentscope_nonlatent_english
-sentimentscope_semimarkov_nonlatent_english
-sentimentscope_semimarkov_latent_english
-baseline_collapse_english
-baseline_pipeline_english
-
-sentimentscope_latent_spanish
-sentimentscope_latent_nohiddeninfo_spanish
-sentimentscope_latent_withpostag_spanish
-sentimentscope_latent_wordembedding_spanish
-sentimentscope_nonlatent_spanish
-sentimentscope_semimarkov_nonlatent_spanish
-sentimentscope_semimarkov_latent_spanish
-baseline_collapse_spanish
-baseline_pipeline_spanish
-
-After executing one command, the program will create a unique folder for storing experiment results. You can type "make check" to see the progress logs and evaluation results in the end. The experiment results store in experiments/sentiment/model/<modelname>/<lang>.
-
-Notice that pipeline will involve two steps of training and evaluation automatically.
 
 Or you can simply run
 
 ```sh
 ./exp_cdsco.sh
+```
+
+Please download the Bioscope and CNeSp dataset before trying out the additional experiments. Use the following scripts for running such additional experiments:
+
+```sh
+./exp_bioscope.sh
+```
+```sh
+./exp_cnesp.sh
 ```
 
 
