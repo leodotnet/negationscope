@@ -44,7 +44,7 @@ Please download the Bioscope and CNeSp dataset before trying out the additional 
 
 The source code is written in Java, which can be found under the "src" folder.
 
-We recommend you to import this project in eclipse.
+Note that it is a Maven project, therefore we recommend you to import this project as a Maven project in eclipse.
 
 
 ## Citation
